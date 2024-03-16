@@ -1,4 +1,5 @@
 import * as SQLite from 'expo-sqlite';
+import { t } from 'i18next';
 
 const database = SQLite.openDatabase('pwdmanager.db');
 
@@ -18,5 +19,17 @@ const initializeDatabase = () => {
     });
 };
 
+const deleteDatabase = () => {
+    database.transaction(tx => {
+        tx.executeSql(
+            `DROP TABLE passwords`,
+            [],
+            () => console.log('Table deleted successfully'),
+            (_, error) => console.log('Failed to delete table', error)
+      );
+    });
+};
+
 export const getDatabaseConnection = () => database;
 export const initDb = initializeDatabase;
+export const deleteDb = deleteDatabase;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { initDb } from './src/database/database';
+import { initDb, deleteDb } from './src/database/database';
 import './src/i18n';
 import AppNavigation from './src/navigation/AppNavigation';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
@@ -9,6 +9,9 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 //init SQLITE db
 initDb();
+
+//delete db
+//deleteDb();
 
 export default function App() {
   return (
