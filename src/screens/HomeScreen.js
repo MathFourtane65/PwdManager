@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, FlatList, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
+import { StyleSheet, View, FlatList, Text, TextInput, TouchableOpacity, Alert, ToastAndroid } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; // Assurez-vous d'avoir installé @expo/vector-icons
 import { useFocusEffect } from '@react-navigation/native';
 import { getPasswords, deletePassword } from '../services/PasswordService';
@@ -51,8 +51,10 @@ const HomeScreen = () => {
         { 
           text: "Oui", onPress: async () => {
             console.log('Suppression validée');
-            deletePassword(passwordId)
-            setPasswords(await getPasswords())
+            deletePassword(passwordId);
+            setPasswords(await getPasswords());
+            ToastAndroid.showWithGravity('Mot de passe supprimé !', ToastAndroid.SHORT, ToastAndroid.TOP)
+
           } 
         }
       ],
@@ -63,6 +65,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Mes MDPs</Text>
       <FlatList
         data={passwords}
         keyExtractor={(item) => item.id.toString()}
@@ -118,6 +121,13 @@ const styles = StyleSheet.create({
     // Styles pour le bouton de l'icône d'œil, ajustez selon vos besoins
     marginLeft: 10,
   },
+  title:{
+    fontSize: 25,
+    textAlign: 'center',
+    margin: 10,
+    color: '#8A7967',
+    fontWeight:'500'
+  }
   // ... autres styles
 });
 

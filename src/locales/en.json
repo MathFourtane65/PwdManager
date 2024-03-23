@@ -2,6 +2,9 @@
     "tabBarhome": "My PWDs",
     "addPassword": "Add PWD",
     "settings": "Settings",
-    "chooseLanguage": "Choose Language"
+    "chooseLanguage": "Choose Language",
+    "placeholderUsername":"Username",
+    "placeholderPassword":"Password",
+    "placeholderService":"Service"
   }
   

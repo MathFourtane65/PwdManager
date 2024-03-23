@@ -2,6 +2,9 @@
     "tabBarhome": "Mes MDPs",
     "addPassword": "Ajouter MDP",
     "settings": "Paramètres",
-    "chooseLanguage": "Choisir la langue"
+    "chooseLanguage": "Choisir la langue",
+    "placeholderUsername":"Nom d'utilisateur",
+    "placeholderPassword":"Mot de passe",
+    "placeholderService":"Service"
   }
   
