@@ -5,6 +5,19 @@
     "chooseLanguage": "Choisir la langue",
     "placeholderUsername":"Nom d'utilisateur",
     "placeholderPassword":"Mot de passe",
-    "placeholderService":"Service"
+    "placeholderService":"Service",
+    "addButtonText": "Ajouter",
+    "about": "A propos",
+    "developer": "Développeur",
+    "version": "Version",
+    "homeScreenTitle": "Mes MDPs",
+    "website": "Site Internet",
+    "addPasswordScreenTitle": "Ajouter un MDP",
+    "settingsScreenTitle": "Paramètres",
+    "toastConfirmationMessageAdd": "Mot de passe ajouté",
+    "passwordLabelHomeScreen": "Mot de passe",
+    "usernameLabelHomeScreen": "Utilisateur"
+
+    
   }
   

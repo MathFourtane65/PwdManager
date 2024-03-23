@@ -15,8 +15,8 @@ i18n
         translation: fr,
       },
     },
-    lng: "en", // language to use, more information: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
-    fallbackLng: "en", // use en if detected lng is not available
+    lng: "fr", // language to use, more information: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+    fallbackLng: "fr", // use en if detected lng is not available
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

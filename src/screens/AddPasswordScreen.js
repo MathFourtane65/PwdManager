@@ -19,9 +19,8 @@ const AddPasswordScreen = () => {
     }
     try {
       await createPassword(username, password, service);
-     // Alert.alert('success', 'ajouté');
      Keyboard.dismiss();
-     ToastAndroid.showWithGravity('Mot de passe ajouté !', ToastAndroid.SHORT, ToastAndroid.TOP)
+     ToastAndroid.showWithGravity(t('toastConfirmationMessageAdd'), ToastAndroid.SHORT, ToastAndroid.TOP)
       // Effacer les champs après l'ajout
       setUsername('');
       setPassword('');
@@ -36,7 +35,7 @@ const AddPasswordScreen = () => {
     <View style={styles.container}
     >
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}>
-      <Text style={styles.title}>Ajouter un MDP</Text>
+      <Text style={styles.title}>{t('addPasswordScreenTitle')}</Text>
       <Image source={srcImage} style={styles.image}/>
 
       <View style={{flex: 1}}> 
@@ -74,7 +73,7 @@ const AddPasswordScreen = () => {
       /> */}
 
 <TouchableOpacity onPress={handleAddPassword} style={styles.button}>
-    <Text style={{color:'#ffffff', textAlign:'center'}}>{t('add')}</Text>
+    <Text style={styles.buttonText}>{t('addButtonText')}</Text>
 </TouchableOpacity>
       </View>
       </View>
@@ -100,7 +99,15 @@ const styles = StyleSheet.create({
   button: {
     //width:'50%',
     backgroundColor: '#8A7967',
-    borderRadius: 30
+    borderRadius: 30,
+    height: 30,
+    justifyContent: 'center',
+    paddingHorizontal: 20
+  },
+  buttonText: {
+    color: '#ffffff',
+    textAlign: 'center',
+    fontSize: 15
   },
   title:{
     fontSize: 25,

@@ -33,7 +33,7 @@ const AppNavigation = () => {
                             tabBarIcon: ({ color, size, focused }) => {
                                 let iconName;
                                 if (route.name === 'Home') {
-                                    iconName = 'home';
+                                    iconName = 'bars';
                                 } else if (route.name === 'Add Password') {
                                     iconName = 'plus';
                                 } else if (route.name === 'Settings') {

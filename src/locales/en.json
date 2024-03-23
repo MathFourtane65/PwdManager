@@ -5,6 +5,18 @@
     "chooseLanguage": "Choose Language",
     "placeholderUsername":"Username",
     "placeholderPassword":"Password",
-    "placeholderService":"Service"
+    "placeholderService":"Service",
+    "addButtonText": "Add",
+    "about": "About",
+    "developer": "Developer",
+    "version": "Version",
+    "homeScreenTitle": "My PWDs",
+    "website": "Website",
+    "addPasswordScreenTitle": "Add PWD",
+    "settingsScreenTitle": "Settings",
+    "toastConfirmationMessageAdd": "Password added",
+    "passwordLabelHomeScreen": "Password",
+    "usernameLabelHomeScreen": "Username"
+
   }
   
